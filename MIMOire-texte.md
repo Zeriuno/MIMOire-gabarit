@@ -130,6 +130,8 @@ int main()
 }
 ```
 
+En mettant le nom du langage après les simples quotes on obtient la coloration syntaxique.
+
 Pour faire parties et sous-parties on met des `#` à côté du titre. Ce sont ces titres qui sont récupérés automatiquement pour faire le sommaire.
 
 Ceci est une citation\thinspace:
