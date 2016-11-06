@@ -147,15 +147,17 @@ Citation
 \LaTeX permet de mettre parfaitement en page toute notation mathématique. Exemples
 
 * indice: X\textsubscript{2}
-* exposant 
 
 Ceci est une interruption de page.\newpage
 
 Si la section se termine sur une page droite et que l'on veut commencer la section suivante sur une page droite également, on peut utiliser ce code\thinspace:
 ```
-\newpage %ici on termine la page actuelle et l'on passe à la suivante
-\newpage\null\thispagestyle{empty}\newpage %la page suivante, blanche, sans numérotation.
+\newpage
+\newpage\null\thispagestyle{empty}\newpage
 ```
+
+La première ligne sert à terminer la page actuelle et passer à la suivante.
+La seconde ligne donne l'instruction de laisser la page suivante blanche, sans numérotation, et de la terminer.
 
 ### Sous-partie de l'introduction
 \newpage
