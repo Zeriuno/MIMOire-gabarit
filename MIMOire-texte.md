@@ -121,7 +121,7 @@ Ceci est en *italique*.\newline
 
 Pour citer du code on peut faire ainsi `code` ou, pour des blocs:
 
-```
+```c
 #include <stdio.h>
 int main()
 {
