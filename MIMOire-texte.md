@@ -61,11 +61,15 @@ Tout ce qui est écrit a été testé, mais il reste **nécessaire** de bien con
 
 La conversion de ce fichier est faire par le script `bash` `md2tex2pdf.sh`. Voici son contenu:
 
-```
+```bash
 #! /usr/bin/env bash
 
-pandoc "$@" -f markdown -t latex --latex-engine=xelatex  -s -o "$@".pdf
+filename="$@"
+basename="${filename%.*}"
+pandoc "$@" -f markdown -t latex --latex-engine=xelatex  -s -o "$basename".pdf
 ```
+
+Les lignes 3 et 4 traitent le nom du fichier donné en entrée et enlèvent l'extension, la conversion est faite dans la dernière ligne.
 
 On utilise le script en ouvrant le terminal, en se plaçant dans le dossier contenant **aussi bien** le fichier avec le texte **que** le script et on appelle le script en lui disant *quel fichier* convertir:
 
@@ -73,7 +77,7 @@ On utilise le script en ouvrant le terminal, en se plaçant dans le dossier cont
 ./md2tex2pdf.sh MIMOire-texte.md
 ```
 
-Le résultat est un fichier avec le même nom que celui d'entrée (extension comprise) en version pdf: dans ce cas, donc, `MIMOire-texte.md.pdf`.
+Le résultat est un fichier avec le même nom que celui d'entrée (sans extension) en version pdf: dans ce cas, donc, `MIMOire-texte.pdf`.
 
 #### Dépendances
 
