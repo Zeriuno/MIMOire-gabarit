@@ -42,10 +42,10 @@
 
 ## Historique des versions
 
-1.0 Première version (Daniele Pitrolo)
-1.1 Ajout du fichier des règles `Règles_memoire_Mimo.odt` (idem)
-1.2 Modification du script `md2tex2pdf.sh` (idem)
-1.3 Explication des formats
+* 1.0 Première version (Daniele Pitrolo)
+* 1.1 Ajout du fichier des règles `Règles_memoire_Mimo.odt` (idem)
+* 1.2 Modification du script `md2tex2pdf.sh` (idem)
+* 1.3 Explication des formats, des systèmes compatibles, ajout du PDF (idem)
 
 ### Remarque
 
