@@ -101,8 +101,9 @@ Pour que le script de conversion fonctionne il est indispensable d'avoir install
 Pour les installer se tourner vers les gestionnaires de paquets de son système d'exploitation:
 
 * pour les GNU/Linux `apt-get` (debian et dérivés), `snap` (Ubuntu), `yum` (Fedora), `pacman` (Arch)…
-* homebrew pour macOS (voir [le site](http://brew.sh/))
+* homebrew pour OS X ou macOS (voir [le site](http://brew.sh/))
 
+Il est conseillé de tester précocement le bon fonctionnement de `pandoc` sur sa machine afin de pouvoir résoudre les éventuels problèmes de dépendances.
 
 ## Syntaxe
 
