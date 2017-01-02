@@ -45,6 +45,16 @@
 1.0 Première version (Daniele Pitrolo)
 1.1 Ajout du fichier des règles `Règles_memoire_Mimo.odt` (idem)
 1.2 Modification du script `md2tex2pdf.sh` (idem)
+1.3 Explication des formats
+
+### Remarque
+
+1. Le fichier source `MIMOire-texte.md` est un simple fichier texte avec l'extension consacrée pour le format Markdown. Si votre système d'exploitation ne sait pas l'ouvrir, il suffit de lui imposer d'utiliser un éditeur de texte (e.g. gedit, Atom, SublimeText…)
+
+2. Cette ressource est à destination des systèmes de type UNIX: GNU/Linux, OS X ou macOS.
+Pour que la conversion soit possible sous Windows (pas de garanties), il est nécessaire d'[y installer pandoc](http://www.texts.io/support/0004/).
+
+3. Tout ce qui est écrit a été testé, mais il reste **nécessaire** de bien contrôler le résultat de la conversion avant de remettre le MIMOire au correcteurs.
 
 ## Technique
 
@@ -52,14 +62,11 @@ Ceci est un gabarit de MIMOire rédigé en mélangeant deux notations: Markdown 
 
 Quand on a tout fini, on fait convertir le fichier par pandoc: le processus est totalement automatisé, la mise en page est gérée par \LaTeX (i.e. impeccable sans prise de tête).
 
-### Remarque
-
-Tout ce qui est écrit a été testé, mais il reste **nécessaire** de bien contrôler le résultat de la conversion avant de remettre le MIMOire au correcteurs.
-
 
 ### Conversion
 
-La conversion de ce fichier est faire par le script `bash` `md2tex2pdf.sh`. Voici son contenu:
+La conversion de ce fichier est faire par le script `bash` `md2tex2pdf.sh`.
+Voici son contenu:
 
 ```bash
 #! /usr/bin/env bash
